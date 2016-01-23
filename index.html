@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="torrentApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Torrent </title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-favicon.png">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="bower_components/dropzone/dist/dropzone.css" rel="stylesheet">
+    <link href="bower_components/dropzone/dist/basic.css" rel="stylesheet">
+    <link href="bower_components/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+    <link href="libs/datatables/media/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="libs/jquery.scrollbar/jquery.scrollbar.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body class="solid_dark">
+    <div class="wrapper">
+      <nav class="navbar navbar-static-top header-navbar">
+        <div class="container-fluid">
+          <div class="header-navbar-mobile">
+            <div class="header-navbar-mobile__menu">
+              <button type="button" class="btn"><i class="fa fa-bars"></i></button>
+            </div>
+            <div class="header-navbar-mobile__title"><span>Blank</span></div>
+            <div class="header-navbar-mobile__settings dropdown"><a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="btn dropdown-toggle"><i class="fa fa-power-off"></i></a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li><a href="#">Log Out</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar-header"><a href="#" class="navbar-brand">
+              <div class="logo text-nowrap">
+                <div class="logo__img"><i class="fa fa-chevron-right"></i></div><span class="logo__text">Torrent</span>
+              </div></a></div>
+          <div id="navbar-top" class="navbar-collapse collapse topnavbar">
+            <ul class="nav navbar-nav navbar-left">
+              <li class="active"><a href="./"><span>Dashboard</span></a></li>
+              
+            </ul>
+            <ul class="userbar nav navbar-nav navbar-right">
+              <li class="dropdown"><a href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="userbar__settings dropdown-toggle"><i class="fa fa-power-off"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Log Out</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="dashboard">
+        <div class="sidebar">
+          <div class="scrollable scrollbar-macosx">
+            <div class="sidebar__cont">
+              <ul class="nav nav-sidebar">
+                <li><span class="sidebar__title">All Torrents</span></li>
+                <li class="active"><a href="./"><i class="fa fa-fw fa-star"></i><span>Dashboard</span></a></li>
+                <li><a href="products.html"><i class="fa fa-fw fa-cube"></i><span>Popular</span></a></li>
+                <li><a href="orders.html"><i class="fa fa-fw fa-truck"></i><i class="badge pull-right">2</i><span>Favourites</span></a></li>
+                <li><a href="users.html"><i class="fa fa-fw fa-user"></i><span>Users</span></a></li>
+              </ul>
+            </div>
+            <div class="sidebar__logo"></div>
+          </div>
+        </div>
+        <div class="main">
+          <div class="scrollable scrollbar-macosx">
+            <div class="main__cont" ng-view="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/dropzone/dist/dropzone.js"></script>
+    <script src="libs/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="libs/datatables/media/js/dataTables.bootstrap.js"></script>
+    <script src="libs/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/controllers/main.js"></script>
+    <script src="js/webtorrent.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>
